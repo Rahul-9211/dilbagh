@@ -91,7 +91,7 @@ function App() {
     {
       name: "Dilbagh Premium",
       description: "Our signature blend of premium ingredients",
-      image: "https://www.dilbaghgroup.com/wp-content/uploads/2017/03/Dilbagh-Plus-new.jpg",
+      image: "/carousel1.png",
       icon: <Package className="w-12 h-12 text-red-600" />,
       features: ["Premium Quality", "Rich Taste", "Classic Flavor"],
       ingredients: ["Betelnut", "Cardamom Seeds", "Sandalwood Oil", "Rose Essence"]
@@ -99,7 +99,7 @@ function App() {
     {
       name: "Dilbagh Plus",
       description: "Enhanced flavor profile for the discerning connoisseur",
-      image: "https://www.dilbaghgroup.com/wp-content/uploads/2017/03/Dilbagh-Plus-new.jpg",
+      image: "/carousel2.png",
       icon: <Star className="w-12 h-12 text-red-600" />,
       features: ["Enhanced Flavor", "Royal Taste", "Elegant Packaging"],
       ingredients: ["Premium Betelnut", "Cardamom Seeds", "Saffron", "Rose Essence", "Kewra"]
@@ -107,7 +107,7 @@ function App() {
     {
       name: "Dilbagh Silver",
       description: "Perfect balance of tradition and taste",
-      image: "https://www.dilbaghgroup.com/wp-content/uploads/2017/03/Dilbagh-Plus-new.jpg",
+      image: "/carousel1.png",
       icon: <Award className="w-12 h-12 text-red-600" />,
       features: ["Balanced Flavor", "Quality Blend", "Traditional Recipe"],
       ingredients: ["Betelnut", "Cardamom Seeds", "Kattha", "Cloves"]
@@ -208,7 +208,7 @@ function App() {
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/40"></div>
           <img 
-            src="https://www.dilbaghgroup.com/wp-content/uploads/2017/04/Home1_SLIDER_1-3-1360x620.jpg"
+            src="/hero.png"
             alt="Dilbagh Pan Masala Products"
             className="w-full h-full object-cover"
           />
@@ -266,7 +266,7 @@ function App() {
       {/* About Section */}
       <section id="about" ref={aboutRef} className="py-20 px-4 relative overflow-hidden bg-black/80">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute h-full w-full bg-[url('https://www.dilbaghgroup.com/wp-content/uploads/2017/04/Home1_SLIDER_1-3-1360x620.jpg')] bg-center bg-no-repeat bg-cover blur-sm"></div>
+          <div className="absolute h-full w-full bg-[url('/carousel2.png')] bg-center bg-no-repeat bg-cover blur-sm"></div>
         </div>
         <div className="max-w-6xl mx-auto relative z-10">
           <motion.h2 
@@ -391,7 +391,7 @@ function App() {
               ></motion.div>
               <motion.div className="grid grid-cols-1 gap-4 relative z-10">
                 <motion.img 
-                  src="https://www.dilbaghgroup.com/wp-content/uploads/2017/03/Dilbagh-Plus-new.jpg"
+                  src="/carousel1.png"
                   alt="Dilbagh Royal Pan Masala"
                   className="rounded-xl shadow-2xl border-2 border-red-900/30 object-cover h-64"
                   whileHover={{ scale: 1.03 }}
@@ -594,7 +594,7 @@ function App() {
                       }}
                     ></motion.div>
                     <img 
-                      src="https://www.dilbaghgroup.com/wp-content/uploads/2017/03/Dilbagh-Plus-new.jpg" 
+                      src="/carousel2.png" 
                       alt="Dilbagh Plus" 
                       className="max-w-full h-auto object-contain relative z-10"
                     />
@@ -716,7 +716,7 @@ function App() {
       {/* Ingredients Section - Inspired by the Rajnigandha ingredient showcase */}
       <section className="py-20 px-4 bg-black relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <div className="h-full w-full bg-[url('https://www.dilbaghgroup.com/wp-content/uploads/2017/04/Home1_SLIDER_1-3-1360x620.jpg')] bg-fixed bg-center bg-no-repeat bg-cover blur-sm"></div>
+          <div className="h-full w-full bg-[url('/carousel1.png')] bg-fixed bg-center bg-no-repeat bg-cover blur-sm"></div>
           <div className="h-full w-full pattern-dots"></div>
         </div>
         
@@ -746,27 +746,27 @@ function App() {
               {
                 name: "Betelnut",
                 description: "Premium quality betelnut, carefully selected and processed",
-                image: "https://www.dilbaghgroup.com/wp-content/uploads/2017/01/Dilbagh-product-specification.jpg"
+                image: "/carousel1.png"
               },
               {
                 name: "Cardamom Seeds",
                 description: "Aromatic cardamom that enhances the flavor profile",
-                image: "https://www.dilbaghgroup.com/wp-content/uploads/2017/03/Dilbagh-Plus-new.jpg"
+                image: "/carousel2.png"
               },
               {
                 name: "Sandalwood Oil",
                 description: "Precious natural oil that adds subtle fragrance",
-                image: "https://www.dilbaghgroup.com/wp-content/uploads/2017/01/Dilbagh-product-specification.jpg"
+                image: "/carousel1.png"
               },
               {
                 name: "Rose Essence",
                 description: "Delicate floral notes that complete the experience",
-                image: "https://www.dilbaghgroup.com/wp-content/uploads/2017/03/Dilbagh-Plus-new.jpg"
+                image: "/carousel2.png"
               },
               {
                 name: "Kattha (Catechu)",
                 description: "Traditional ingredient that adds characteristic richness",
-                image: "https://www.dilbaghgroup.com/wp-content/uploads/2017/01/Dilbagh-product-specification.jpg"
+                image: "/carousel1.png"
               }
             ].map((ingredient, index) => (
               <motion.div
@@ -877,7 +877,7 @@ function App() {
                     }}
                   ></motion.div>
                   <img 
-                    src="https://www.dilbaghgroup.com/wp-content/uploads/2017/03/Dilbagh-Plus-new.jpg" 
+                    src="/carousel2.png" 
                     alt="Dilbagh Plus Premium Ingredients" 
                     className="w-full h-full object-cover object-center opacity-90"
                   />
@@ -891,7 +891,7 @@ function App() {
       {/* Careers Section */}
       <section id="careers" ref={careersRef} className="py-20 px-4 bg-black relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
-          <div className="h-full w-full bg-[url('https://www.dilbaghgroup.com/wp-content/uploads/2017/04/Home1_SLIDER_1-3-1360x620.jpg')] bg-center bg-repeat pattern-grid-lg"></div>
+          <div className="h-full w-full bg-[url('/carousel1.png')] bg-center bg-repeat pattern-grid-lg"></div>
         </div>
         
         <div className="max-w-6xl mx-auto relative z-10">
@@ -1010,7 +1010,7 @@ function App() {
       {/* Contact Section */}
       <section id="contact" ref={contactRef} className="py-20 px-4 bg-gradient-to-r from-gray-900 to-black relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-full h-full bg-[url('https://www.dilbaghgroup.com/wp-content/uploads/2017/01/Dilbagh-product-specification.jpg')] bg-right bg-no-repeat bg-cover blur-md"></div>
+          <div className="absolute top-0 right-0 w-full h-full bg-[url('/carousel2.png')] bg-right bg-no-repeat bg-cover blur-md"></div>
         </div>
         
         <div className="max-w-6xl mx-auto relative z-10">
